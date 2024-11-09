@@ -1,2 +1,2 @@
 # Kişisel Kart
-cpanel e ekleyip kullanabilirsiniz. 
+cpanel e ekleyin kullanabilirsiniz. 
