@@ -1,11 +1,13 @@
 <?php
+    // PHP dosyasına başlangıç
+    // Burada herhangi bir PHP işlemi eklenebilir.
 ?>
 <!DOCTYPE html>
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fortextexe</title>
+    <title>Profil Kartı</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css"> <!-- Style CSS bağlantısı -->
