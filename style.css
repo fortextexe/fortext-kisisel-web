@@ -1,0 +1,167 @@
+/* Arka plan videosu */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Profil kartı */
+.profile-container {
+    position: relative;
+    width: 299px;
+    height: 570px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    backdrop-filter: blur(8px);
+    overflow: hidden;
+}
+
+/* Banner Görseli */
+.banner {
+    width: 100%;
+    height: 120px;
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+/* Profil Resmi */
+.profile-img {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 4px solid white;
+    margin-top: -79px;
+    background-color: #ddd;
+    background-image: url('./profil.png');
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.profile-img.enlarged {
+    transform: scale(1.2);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+}
+
+/* LED Efekti */
+.led {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #72FF28;
+    bottom: 15px;
+    right: 5px;
+    box-shadow: 0 0 6px #72FF28, 0 0 10px #72FF28;
+    animation: slowBlink 1.5s ease-in-out infinite;
+    transition: transform 0.4s ease;
+}
+
+.profile-img.enlarged .led {
+    transform: scale(1.2);
+}
+
+/* Yavaş yanıp sönme animasyonu */
+@keyframes slowBlink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.3;
+    }
+}
+
+/* Kullanıcı adı */
+.name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #fff;
+}
+
+/* Sosyal medya ikonları */
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-icons i {
+    font-size: 24px;
+    color: #fff;
+    transition: color 0.3s;
+    cursor: pointer;
+}
+
+.social-icons i:hover {
+    color: #3375D3;
+}
+
+/* Merhaba mesajı */
+.intro-text {
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    margin-top: 15px;
+    padding: 0 20px;
+    line-height: 1.5;
+}
+
+/* Alt yazı */
+.footer-text {
+    margin-top: 60px;
+    font-size: 16px;
+    color: #fff;
+}
+
+/* Fortextexe'ye özel stil */
+.highlight {
+    color: #3375D3;
+    cursor: default;
+    transition: text-shadow 0.3s ease;
+}
+
+/* Neon efekti */
+.highlight.neon {
+    text-shadow: 0 0 5px #3375D3, 0 0 10px #3375D3, 0 0 15px #3375D3;
+}
+
+/* Hakkımda kısmı */
+.about-me {
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+    padding: 0 20px;
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+/* Hakkımda Başlığı */
+.about-me h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
